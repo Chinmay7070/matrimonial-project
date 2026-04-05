@@ -41,9 +41,11 @@ public class User {
     @Column(nullable = false)
     private RegisteredBy registeredBy;
 
+    @Builder.Default
     @Column(nullable = false)
     private Boolean isActive = true;
 
+    @Builder.Default
     @Column(nullable = false)
     private Boolean isEmailVerified = false;
 
