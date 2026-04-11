@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/eureka-server (2)/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/api-gateway (3)/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/_auth-service/auth-service/pom.xml" />
+        <option value="$PROJECT_DIR$/profile-service/pom.xml" />
       </list>
     </option>
   </component>
