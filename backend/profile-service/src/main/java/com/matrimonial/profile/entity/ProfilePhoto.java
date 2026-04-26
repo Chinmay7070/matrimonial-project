@@ -22,6 +22,10 @@ public class ProfilePhoto {
     @Column(name = "photo_url", nullable = false, length = 500)
     private String photoUrl;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "profile_id", nullable = false)
+    private Profile profile;
+
     @Builder.Default
     @Column(name = "is_primary")
     private Boolean isPrimary = false;
