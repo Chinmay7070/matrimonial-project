@@ -19,6 +19,10 @@ public class ProfilePhoto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "profile_id", nullable = false)
+    private Profile profile;
+
     @Column(name = "photo_url", nullable = false, length = 500)
     private String photoUrl;
 
